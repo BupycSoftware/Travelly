@@ -1,0 +1,410 @@
+* x{
+    border: 1px solid red;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    font-family: "Open Sans";
+    flex-flow: column nowrap;
+}
+
+header {
+    height: 100vh;
+    background: url(img/background.png) no-repeat center top;
+    background-size: cover;
+}
+
+.header_width {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 2% 0;
+    height: 63%;
+    justify-content: space-between;
+}
+
+.header_img {
+    width: 83%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_samalot {
+    display: flex;
+    align-items: center;
+}
+
+.header_img h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: #f4f3ee;
+    font-weight: 300;
+    margin: 0 0 0 10px;
+}
+
+.navigation {
+    cursor: pointer;
+    border-bottom: 17px double white; 
+    border-top: 6px solid white; 
+    content: "";
+    height: 5px; 
+    width: 30px;
+    transform: scale(0.8);
+    margin-right: 9px;
+    margin-top: 9px;
+}
+
+.header_search_form {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.header_search {
+    display: flex;
+    flex-flow: column nowrap;
+    width: fit-content;
+    align-items: center;
+}
+
+.header_search h1 {
+    font-size: 52px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+#search_text {
+    padding: 10.5px 11px;
+    width: 300px;
+}
+
+#search_confirm {
+    padding: 12.5px 0;
+    width: 122px;
+    font-weight: 700;
+    background-color: #fd4f32;
+    color: #ffffff;
+    border: 0;
+    letter-spacing: 1px;
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+::placeholder {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #8b8b8b;
+}
+
+article {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 5% 7%;
+    background: #f4f3ee;
+}
+
+.articleTitle {
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #323232;
+    font-family: "Montserrat";
+    margin: 0;
+    font-weight: bold;
+}
+
+.articleDisc {
+    font-size: 15px;
+    letter-spacing: 0px;
+    color: #8b8b8b;
+    margin: 10px 0 30px 0;
+}
+
+.articleBlock {
+    width: 240px;
+    background: white;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.articleBlockPosition {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.articleBlock img {
+    width: 100%;
+    height: 177px;
+}
+
+.onImgText {
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    text-align: right;
+    margin-top: -28px;
+    margin-right: 15px;
+}
+
+.articleBlockText {
+    padding: 8%;
+}
+
+.blockTitle {
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #323232;
+    font-family: "Montserrat";
+    margin: 0 0 14px 0;
+    font-weight: bold;
+}
+
+.blockDisc {
+    width: 204px;
+    font-size: 13px;
+    line-height: 19px;
+    color: #696969;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 5% 7%;
+    border-top: 1px solid #e7e7e7;
+}
+
+.mainTitle {
+    font-size: 52px;
+    letter-spacing: 2px;
+    color: #323232;
+    font-weight: 300;
+    margin: 0 0 35px 0;
+}
+
+.mainBlock {
+    width: 300px;
+}
+
+.mainBlockPosition {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.mainBlockTitle {
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #323232;
+    font-family: "Montserrat";
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+.mainBlockDisc {
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 22px;
+    color: #8b8b8b;
+    margin: 0;
+}
+
+.mainSubscribe {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 70px 0 25px 0;
+}
+
+.mainSubscribePosition {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.mainSubscribeTitle {
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #323232;
+    font-family: "Montserrat";
+    margin: 0 0 25px 0;
+    font-weight: bold;
+}
+
+
+#subscribe_text {
+    padding: 14px;
+    width: 326px;
+    background-color: #eeeeee;
+    border: 0;
+}
+
+#subscribe_confirm {
+    padding: 12px 0;
+    width: 152px;
+    background-color: #fd4f32;
+    color: #ffffff;
+    font-size: 16px;
+    border: 0;
+    letter-spacing: 1px;
+    margin-left: -5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 1% 7%;
+    background: #f4f3ee;
+    border-top: 1px solid #e7e7e7;
+}
+
+.footerCopy {
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 22px;
+    color: #8b8b8b;
+}
+
+ul {
+    text-align: center;
+    padding: 0px;
+}
+
+ul li {
+    cursor: pointer;
+    display: inline-block;
+    list-style: none;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #323232;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+ul li:nth-last-of-type(2n) {
+    margin: 0 20px;
+}
+
+@media (max-width: 1024px) {
+    article {
+        align-items: center;
+    }
+
+    .articleBlock {
+        margin: 27px;
+    }
+
+    .mainBlock {
+        margin: 27px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header_samalot h1 {
+        font-size: 24px;
+    }
+
+    .header_search h1 {
+        font-size: 36px;
+    }
+
+    main {
+        align-items: center;
+    }
+
+    .mainBlockPosition {
+        flex-flow: column wrap;
+    }
+
+    footer {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .header_search h1 {
+        font-size: 24px;
+    }
+
+    .header_width {
+        height: 70%;
+    }
+
+    .header_search_form {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    #search_text {
+        width: 100%;
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+    #search_text::placeholder {
+        font-size: 12px;
+    }
+
+    #search_confirm {
+        width: 50%;
+        padding: 5px;
+    }
+
+    .articleDisc,
+    .mainBlockTitle,
+    .mainBlockDisc,
+    .footerCopy {
+        text-align: center;
+    }
+
+    .articleBlockPosition {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .mainTitle {
+        font-size: 30px;
+    }
+
+    .mainSubscribePosition {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+}
+
+@media (max-width: 375px) {
+    #subscribe_text {
+        width: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header_search h1 {
+        font-size: 20px;
+    }
+
+    .mainBlock {
+        margin: 25px 0;
+    }
+
+    .mainBlockTitle {
+        font-size: 14px;
+    }
+
+    .mainBlockDisc {
+        font-size: 13px;
+    }
+
+    .mainSubscribeTitle {
+        text-align: center;
+    }
+
+    #subscribe_text {
+        width: 250px;
+    }
+}
